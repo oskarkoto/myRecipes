@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using myRecipes.Models;
 
 namespace myRecipes.Data
 {
@@ -12,5 +13,6 @@ namespace myRecipes.Data
             : base(options)
         {
         }
+        public DbSet<myRecipes.Models.Recipe> Recipe { get; set; }
     }
 }
